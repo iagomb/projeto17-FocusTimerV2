@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <section id="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            <section id="controls">
+                <button data-action="toggleRunning" class="ph-bold ph-play-circle">
+                </button>
+                <button data-action="toggleRunning" class="ph-bold ph-pause-circle">                
+                </button>
+                <button data-action="reset"class="ph-bold ph-stop-circle">
+                </button>
+                <button data-action="countUp"class="ph-bold ph-plus-circle">
+                </button>
+                <button data-action="countDown" class="ph-bold ph-minus-circle">
+                </button>
+            </section>
+        </div>
+        <!-- #02799D   #E1E1E6 white-->
+        <section id="cards" class="cards">
+            <div id="playButton1" class="card" >
+                <i class="ph-bold ph-tree"></i>
+            </div>
+            <div id="playButton2" class="card">
+                <i class="ph-bold ph-cloud-rain"></i>
+            </div>
+            <div id="playButton3" class="card">
+                <i class="ph-bold ph-storefront"></i>
+            </div>
+            <div id="playButton4" class="card">
+                <i class="ph-bold ph-flame"></i>
+            </div>
+
+        </section>
+
+        <button id="toggle-mode">
+            <span class="sr-only">Ativar light mode</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+    </div>
+</body>
+</html>
